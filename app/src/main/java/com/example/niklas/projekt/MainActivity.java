@@ -1,5 +1,6 @@
 package com.example.niklas.projekt;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
     public void buttonOnClick(View v) {
         // do something when the button is clicked
         Button button = (Button) v;
-        ((Button) v).setText("clicked");
+        startActivity(new Intent(getApplicationContext(),MainActivity4.class));
     }
 
     @Override
