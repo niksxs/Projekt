@@ -31,6 +31,26 @@ public class MainActivity3 extends Activity {
         ad = new StringArrayAdapter(values, this);
         lv.setAdapter(ad);
 
+/*        SwipeDismissListViewTouchListener touchListener = new SwipeDismissListViewTouchListener(MainActivity3.this, new SwipeDismissListViewTouchListener.DismissCallbacks()
+        {
+
+            @Override
+            public boolean canDismiss(int position)
+            {
+                return position <= values.length - 1;
+            }
+
+            @Override
+            public void onDismiss(ListView listView, int[] reverseSortedPositions)
+            {
+                for (int position : reverseSortedPositions) {
+                    String itemString = (String) ad.getItem(position);
+                    ad.remove(itemString);
+                }
+                ad.notifyDataSetChanged();
+            }
+        });*/
+
     }
 
 
