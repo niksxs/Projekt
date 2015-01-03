@@ -36,6 +36,50 @@
             android:name=".MainActivity6"
             android:label="@string/title_activity_main_activity6" >
         </activity>
+        <activity
+            android:name=".MainActivity7"
+            android:label="@string/title_activity_main_activity7" >
+        </activity>
+        <activity
+            android:name=".Popopactivity"
+            android:label="@string/title_activity_popopactivity" >
+        </activity>
+        <activity
+            android:name="com.example.niklas.expandablelist.MainActivity_exp"
+            android:label="@string/title_activity_main_activity_exp" >
+        </activity>
+        <activity
+            android:name="com.example.niklas.expandablelist.child"
+            android:label="@string/title_activity_child" >
+        </activity>
+        <activity
+            android:name="com.example.niklas.expandablelist.group"
+            android:label="@string/title_activity_group" >
+        </activity>
+        <activity
+            android:name=".MainActivity8"
+            android:label="@string/title_activity_main_activity8" >
+        </activity>
+        <activity
+            android:name=".slider"
+            android:label="@string/title_activity_slider" >
+        </activity>
+        <activity
+            android:name=".NewPlan.Ziele"
+            android:label="@string/title_activity_ziele" >
+        </activity>
+        <activity
+            android:name=".ErrorMsg.ErrorMessage"
+            android:label="@string/title_activity_error_message" >
+        </activity>
+        <activity
+            android:name=".ErrorMsg.Bestaetigung"
+            android:label="@string/title_activity_bestaetigung" >
+        </activity>
+        <activity
+            android:name=".StartTrain.Startmenu"
+            android:label="@string/title_activity_startmenu" >
+        </activity>
     </application>
 
 </manifest>

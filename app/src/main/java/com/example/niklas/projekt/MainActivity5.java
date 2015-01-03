@@ -14,8 +14,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /*
-* Selbe wie MainActivity4 nur mit Swipe
+* Alle Trainingsübungen (noch ahrd gecoded)
 * */
+
+//TODO Datenbankanbindung
+//TODO RecycleView nutzen mit entsprechenden Listenern
+
 public class MainActivity5 extends ListActivity
 {
 

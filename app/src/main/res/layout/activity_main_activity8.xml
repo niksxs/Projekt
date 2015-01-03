@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:divider="@android:color/black"
+    android:weightSum="10"
+    android:padding="16dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="9.5"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weiter"
+        android:id="@+id/button4"
+        android:onClick="buttonOnClick3" />
+</LinearLayout>
+

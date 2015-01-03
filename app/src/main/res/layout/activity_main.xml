@@ -1,5 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -9,81 +11,95 @@
         android:text="Menü"
         android:textSize="30sp"
         android:gravity="center"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/StartTrain"
-        android:layout_alignEnd="@+id/StartTrain" />
+        android:layout_alignParentTop="true"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Training starten"
-        android:id="@+id/StartTrain"
+    <ScrollView
         android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        android:id="@+id/scollMenu">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Outdoor"
-        android:id="@+id/Outdoor"
-        android:layout_below="@+id/StartTrain"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/StartTrain"
-        android:layout_alignEnd="@+id/StartTrain" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trainingsplan anzeigen"
-        android:id="@+id/ShowPlan"
-        android:layout_below="@+id/Outdoor"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/Outdoor"
-        android:layout_alignEnd="@+id/Outdoor" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Training starten"
+                android:id="@+id/StartTrain"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="39dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trainingsplan anlegen"
-        android:id="@+id/NewPlan"
-        android:layout_below="@+id/ShowPlan"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/ShowPlan"
-        android:layout_alignEnd="@+id/ShowPlan"
-        android:onClick="buttonOnClick" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/StartTrain"
+                android:text="Outdoor"
+                android:id="@+id/Outdoor"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trainingsplan auswerten"
-        android:id="@+id/StatPlan"
-        android:layout_below="@+id/NewPlan"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/NewPlan"
-        android:layout_alignEnd="@+id/NewPlan" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Outdoor"
+                android:text="Trainingsplan anzeigen"
+                android:id="@+id/ShowPlan"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Störung melden"
-        android:id="@+id/ErrorMsg"
-        android:layout_below="@+id/StatPlan"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/StatPlan"
-        android:layout_alignEnd="@+id/StatPlan" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trainingsplan anlegen"
+                android:id="@+id/NewPlan"
+                android:layout_below="@+id/ShowPlan"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trainingsplan auswerten"
+                android:id="@+id/StatPlan"
+                android:layout_below="@+id/NewPlan"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Störung melden"
+                android:id="@+id/ErrorMsg"
+                android:layout_below="@+id/StatPlan"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

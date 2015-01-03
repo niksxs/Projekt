@@ -10,5 +10,16 @@
     <string name="title_activity_main_activity4">MainActivity4</string>
     <string name="title_activity_main_activity5">MainActivity5</string>
     <string name="title_activity_main_activity6">MainActivity6</string>
+    <string name="title_activity_main_activity7">MainActivity7</string>
+    <string name="title_activity_popopactivity">Popopactivity</string>
+    <string name="title_activity_main_activity_exp">MainActivity_exp</string>
+    <string name="title_activity_child">child</string>
+    <string name="title_activity_group">group</string>
+    <string name="title_activity_main_activity8">MainActivity8</string>
+    <string name="title_activity_slider">slider</string>
+    <string name="title_activity_ziele">Ziele</string>
+    <string name="title_activity_error_message">ErrorMessage</string>
+    <string name="title_activity_bestaetigung">Bestaetigung</string>
+    <string name="title_activity_startmenu">Startmenu</string>
 
 </resources>

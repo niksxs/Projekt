@@ -19,15 +19,11 @@ package com.example.niklas.projekt;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
-import android.app.ListActivity;
-import android.app.ListFragment;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
 /**
  * A {@link android.view.View.OnTouchListener} that makes any {@link android.view.View} dismissable when the
@@ -37,7 +33,7 @@ import android.widget.ListView;
  * (i.e. you're using
  * {@link android.widget.ListView#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)}
  * or an equivalent listener on {@link android.app.ListActivity} or
- * {@link android.app.ListFragment}, use {@link SwipeDismissListViewTouchListener} instead.</em></p>
+ * {@link android.app.ListFragment}, use {@link SwipeDismissRecyclerViewTouchListener} instead.</em></p>
  *
  * <p>Example usage:</p>
  *
@@ -55,7 +51,7 @@ import android.widget.ListView;
  * <p>This class Requires API level 12 or later due to use of {@link
  * android.view.ViewPropertyAnimator}.</p>
  *
- * @see SwipeDismissListViewTouchListener
+ * @see SwipeDismissRecyclerViewTouchListener
  */
 public class SwipeDismissTouchListener implements View.OnTouchListener {
     // Cached ViewConfiguration and system-wide constant values
@@ -79,7 +75,7 @@ public class SwipeDismissTouchListener implements View.OnTouchListener {
     private float mTranslationX;
 
     /**
-     * The callback interface used by {@link com.example.niklas.projekt.SwipeDismissTouchListener} to inform its client
+     * The callback interface used by {@link SwipeDismissTouchListener} to inform its client
      * about a successful dismissal of the view for which it was created.
      */
     public interface DismissCallbacks {
@@ -278,3 +274,4 @@ public class SwipeDismissTouchListener implements View.OnTouchListener {
         animator.start();
     }
 }
+
