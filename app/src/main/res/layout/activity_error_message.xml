@@ -9,14 +9,25 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:text="Beschreiben Sie den Fehler:"
-        android:textSize="20dp"
-        android:id="@+id/textFehler"
+        android:textSize="20sp"
+        android:id="@+id/Uebung"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Beschreiben Sie den Fehler:"
+        android:textSize="20sp"
+        android:id="@+id/textFehler"
+        android:layout_below="@+id/Uebung"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Spinner
         android:layout_width="fill_parent"

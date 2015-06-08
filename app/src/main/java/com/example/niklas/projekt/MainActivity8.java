@@ -63,6 +63,8 @@ public class MainActivity8 extends Activity {
             public CustomViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
                 View view = LayoutInflater.from(viewGroup.getContext()).inflate(android.R.layout.simple_list_item_1
                         , viewGroup, false);
+/*                LayoutInflater inf = LayoutInflater.from(viewGroup.getContext());
+                View view = inf.inflate(R.layout.simple_list_item_1, viewGroup, false);*/
                 return new CustomViewHolder(view);
             }
 

@@ -17,32 +17,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity2"
-            android:label="@string/title_activity_main_activity2" >
-        </activity>
-        <activity
-            android:name=".MainActivity3"
-            android:label="@string/title_activity_main_activity3" >
-        </activity>
-        <activity
-            android:name=".MainActivity4"
-            android:label="@string/title_activity_main_activity4" >
-        </activity>
-        <activity
-            android:name=".MainActivity5"
-            android:label="@string/title_activity_main_activity5" >
-        </activity>
-        <activity
             android:name=".MainActivity6"
             android:label="@string/title_activity_main_activity6" >
         </activity>
         <activity
             android:name=".MainActivity7"
             android:label="@string/title_activity_main_activity7" >
-        </activity>
-        <activity
-            android:name=".Popopactivity"
-            android:label="@string/title_activity_popopactivity" >
         </activity>
         <activity
             android:name="com.example.niklas.expandablelist.MainActivity_exp"
@@ -61,10 +41,6 @@
             android:label="@string/title_activity_main_activity8" >
         </activity>
         <activity
-            android:name=".slider"
-            android:label="@string/title_activity_slider" >
-        </activity>
-        <activity
             android:name=".NewPlan.Ziele"
             android:label="@string/title_activity_ziele" >
         </activity>
@@ -79,6 +55,13 @@
         <activity
             android:name=".StartTrain.Startmenu"
             android:label="@string/title_activity_startmenu" >
+        </activity>
+
+        <uses-permission android:name="android.permission.CAMERA" />
+
+        <activity
+            android:name=".ErrorMsg.ScanQRCode"
+            android:label="@string/title_activity_scan_qrcode" >
         </activity>
     </application>
 

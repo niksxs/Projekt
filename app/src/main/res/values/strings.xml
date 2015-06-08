@@ -21,5 +21,6 @@
     <string name="title_activity_error_message">ErrorMessage</string>
     <string name="title_activity_bestaetigung">Bestaetigung</string>
     <string name="title_activity_startmenu">Startmenu</string>
+    <string name="title_activity_scan_qrcode">ScanQRCode</string>
 
 </resources>

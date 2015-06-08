@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.niklas.projekt.ErrorMsg.ErrorMessage;
+import com.example.niklas.projekt.ErrorMsg.ScanQRCode;
 import com.example.niklas.projekt.NewPlan.Ziele;
 
 /*
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         error.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), ErrorMessage.class));
+                startActivity(new Intent(getApplicationContext(), ScanQRCode.class));
             }
         });
     }

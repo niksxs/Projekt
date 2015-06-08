@@ -20,6 +20,12 @@ public class ErrorMessage extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error_message);
 
+        TextView Uebung = (TextView) findViewById(R.id.Uebung);
+        Intent i = getIntent();
+        // Receiving the Data
+        String uebung = i.getStringExtra("Uebung");
+        Uebung.setText(uebung);
+
         // Dropdown Menü
         String [] items = new String[]{"", "Fehlender Stift", "Seil abgenutzt", "Lederauflage gerissen"};
         final Spinner spinner = (Spinner) findViewById(R.id.spinnerFehler);
