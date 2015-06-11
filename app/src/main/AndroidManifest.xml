@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.niklas.projekt" >
-
+    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -25,18 +25,6 @@
             android:label="@string/title_activity_main_activity7" >
         </activity>
         <activity
-            android:name="com.example.niklas.expandablelist.MainActivity_exp"
-            android:label="@string/title_activity_main_activity_exp" >
-        </activity>
-        <activity
-            android:name="com.example.niklas.expandablelist.child"
-            android:label="@string/title_activity_child" >
-        </activity>
-        <activity
-            android:name="com.example.niklas.expandablelist.group"
-            android:label="@string/title_activity_group" >
-        </activity>
-        <activity
             android:name=".MainActivity8"
             android:label="@string/title_activity_main_activity8" >
         </activity>
@@ -56,9 +44,6 @@
             android:name=".StartTrain.Startmenu"
             android:label="@string/title_activity_startmenu" >
         </activity>
-
-        <uses-permission android:name="android.permission.CAMERA" />
-
         <activity
             android:name=".ErrorMsg.ScanQRCode"
             android:label="@string/title_activity_scan_qrcode" >

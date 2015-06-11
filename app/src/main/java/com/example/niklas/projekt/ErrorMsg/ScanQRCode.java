@@ -42,6 +42,7 @@ public class ScanQRCode extends Activity implements ZXingScannerView.ResultHandl
 
         Intent nextScreen = new Intent(getApplicationContext(), ErrorMessage.class);
         nextScreen.putExtra("Uebung", rawResult.getText());
+        startActivity(nextScreen);
 
         Log.v("Result: " , rawResult.getText()); // Prints scan results
         Log.v("Formatted Result: ", rawResult.getBarcodeFormat().toString()); // Prints the scan format (qrcode, pdf417 etc.)

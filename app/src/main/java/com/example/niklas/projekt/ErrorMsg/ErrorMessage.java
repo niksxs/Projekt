@@ -35,8 +35,7 @@ public class ErrorMessage extends Activity {
         final TextView owntarget = (TextView) findViewById(R.id.editFehler);
 
         // Button
-        final Bundle data = new Bundle();
-        final Intent in = new Intent(ErrorMessage.this, Bestaetigung.class);
+        final Intent in = new Intent(getApplicationContext(), Bestaetigung.class);
         final Button senden = (Button) findViewById(R.id.Senden);
         senden.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,8 +58,7 @@ public class ErrorMessage extends Activity {
                 {
                     read = spinner.getSelectedItem().toString();
                     Log.v("1. Fall: ", read);
-                    data.putString("fehler", read);
-                    in.putExtras(data);
+                    in.putExtra("Fehler", read);
                     Toast.makeText(ErrorMessage.this, read, Toast.LENGTH_LONG).show();
                     startActivity(in);
                 }
@@ -68,8 +66,7 @@ public class ErrorMessage extends Activity {
                 {
                     read = owntarget.getText().toString();
                     Log.v("2. Fall: ", read);
-                    data.putString("fehler", read);
-                    in.putExtras(data);
+                    in.putExtra("Fehler", read);
                     Toast.makeText(ErrorMessage.this, read, Toast.LENGTH_LONG).show();
                     startActivity(in);
                 }
