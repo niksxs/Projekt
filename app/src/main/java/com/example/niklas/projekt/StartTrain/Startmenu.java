@@ -5,9 +5,9 @@ import android.os.Bundle;
 
 import com.example.niklas.projekt.R;
 
-/* StartTraining Klasse, benötigt 2 Menüpunkte.
- * 1. QR-Codes scannen
- * 2. Trainingsplan auswählen
+/* StartTraining Klasse, benötigt:
+ * Anzeige der bereits hinterlegten Trainingspläne, mit Markierung des aktuellen
+ * Möglichkeit zum hinzufügen eines neuen Plans
  */
 public class Startmenu extends Activity {
 
